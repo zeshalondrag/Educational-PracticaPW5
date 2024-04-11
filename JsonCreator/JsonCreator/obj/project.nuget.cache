@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "roFHnZ98dPv0hiya8bUnSgxgaSYxJbHk4lhC+mVxdYyIELhrru1Afn6zTgwwF2JbZI1dSwyxPznK4k63bwWfew==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\yaney\\Downloads\\JsonCreator\\JsonCreator\\JsonCreator.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\yaney\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}

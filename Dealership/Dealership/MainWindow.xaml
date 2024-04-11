@@ -1,0 +1,34 @@
+﻿<Window x:Class="Dealership.MainWindow"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Dealership"
+        mc:Ignorable="d"
+        Background="White"
+        WindowStartupLocation="CenterScreen"
+        Title="Авторизация" Height="400" Width="450" ResizeMode="CanMinimize">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="0.3*"/>
+            <ColumnDefinition/>
+            <ColumnDefinition Width="0.3*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="50"/>
+            <RowDefinition/>
+            <RowDefinition Height="30"/>
+            <RowDefinition Height="30"/>
+            <RowDefinition/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="50"/>
+        </Grid.RowDefinitions>
+        <Grid Grid.Column="1" Grid.Row="1" Grid.RowSpan="4"/>
+        <TextBlock Grid.Row="1" Grid.ColumnSpan="3" Text="Авторизация" VerticalAlignment="Center" HorizontalAlignment="Center" FontWeight="Bold" FontSize="24" Foreground="Teal"/>
+        <TextBox x:Name="LoginTbx" Grid.Row="2" Grid.ColumnSpan="3" materialDesign:HintAssist.Hint="Логин" materialDesign:TextFieldAssist.HasClearButton="True" Margin="85,0"/>
+        <PasswordBox x:Name="PasswordTbx" Grid.Row="3" Grid.ColumnSpan="3" materialDesign:HintAssist.Hint="Пароль" materialDesign:TextFieldAssist.HasClearButton="True" Margin="85,0"/>
+        <Button x:Name="loginIn" Grid.Row="4" Grid.ColumnSpan="3" Content="Войти" Foreground="White" Margin="100,0" BorderThickness="10" FontWeight="Bold" Click="loginIn_Click"/>
+        <Button x:Name="exit" Grid.Row="5" Grid.ColumnSpan="3" Content="Выход" Foreground="White" Margin="100,0" BorderThickness="10" FontWeight="Bold" Click="exit_Click"/>
+    </Grid>
+</Window>
